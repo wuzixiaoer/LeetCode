@@ -1,0 +1,18 @@
+#重点在于word[:-1]下标判断，这个单词除了最后一个字母剩下都在集合里，那就把它添加进去
+class Solution(object):
+    def longestWord(self, words):
+        """
+        :type words: List[str]
+        :rtype: str
+        """
+        words.sort()
+        words_set, longest_word = set(['']), ''
+        for word in words:
+            if word[:-1] in words_set:
+                words_set.add(word)
+                if len(word) > len(longest_word):
+                    longest_word = word
+        return longest_word
+        
+        
+ 
