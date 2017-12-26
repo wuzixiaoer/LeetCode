@@ -1,0 +1,13 @@
+There are 1000 buckets, one and only one of them contains poison, the rest are filled with water. They all look the same. If a pig drinks that poison it will die within 15 minutes. What is the minimum amount of pigs you need to figure out which bucket contains the poison within one hour.
+
+Answer this question, and write an algorithm for the follow-up general case.
+
+
+THINKING PROCESS
+
+1. What if you only have one shot?
+
+Eg. 4 buckets, 15 mins to die, and 15 mins to test.
+The answer is 2. Suppose we use A and B to represent pigs, we could have
+
+0_1478958363340_upload-5c96756b-ca9f-41f2-b597-ff57a040ebe8
