@@ -1,0 +1,11 @@
+class Solution(object):
+    def poorPigs(self, buckets, minutesToDie, minutesToTest):
+        """
+        :type buckets: int
+        :type minutesToDie: int
+        :type minutesToTest: int
+        :rtype: int
+        """
+        b = minutesToTest/minutesToDie+1
+        a = math.ceil(math.log(buckets,b))
+        return int(a)
